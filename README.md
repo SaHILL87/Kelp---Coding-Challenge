@@ -135,22 +135,6 @@ Converts to:
 
 ---
 
-## Output Example
-
-### Console Output
-
-**Processing Status:**
-```
-[Insert your console output screenshot/text here]
-```
-
-**Age Distribution Report:**
-```
-[Insert age distribution report output here]
-```
-
----
-
 ## Assumptions
 
 1. **CSV Format**

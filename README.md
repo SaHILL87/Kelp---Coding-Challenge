@@ -8,11 +8,39 @@
 - **Age Analytics**: Automatic age distribution calculation and reporting
 ---
 
+Run and the application will automatically:
+1. Connect to PostgreSQL database
+2. Create the `users` table
+3. Parse the CSV file from configured path
+4. Generate `output/users.json`
+5. Insert records into database
+6. Display age distribution report
+7. Clean up (drop table for next run)
+
+## Output Example
+
+### Console Output
+```
+==================================================
+AGE DISTRIBUTION REPORT
+==================================================
+
+Age Group       | Percentage
+--------------------------------------------------
+< 20            |  20.00%
+20-40           |  40.00%
+40-60           |  30.00%
+> 60            |  10.00%
+--------------------------------------------------
+Total Users: 5,000
+==================================================
+```
+
 ## Installation
 
 1. **Clone the repository**
 ```bash
-git clone <repository-url>
+git clone https://github.com/SaHILL87/Kelp---Coding-Challenge.git
 cd kelp
 ```
 
@@ -62,15 +90,6 @@ John,Doe,30,123 Main St,New York,john@email.com
 ```bash
 npm run dev
 ```
-
-The application will automatically:
-1. Connect to PostgreSQL database
-2. Create the `users` table
-3. Parse the CSV file from configured path
-4. Generate `output/users.json`
-5. Insert records into database
-6. Display age distribution report
-7. Clean up (drop table for next run)
 
 ---
 
